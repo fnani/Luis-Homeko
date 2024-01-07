@@ -1,0 +1,245 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #eaeaea;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* header */
+
+.pik {
+  width: 100%;
+  position: fixed;
+  display: block;
+  z-index: 1111;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  background: linear-gradient(to right, #ffffff, #f5f0fc, #e3dcee, #cbc1db);
+  height: 55px;
+}
+
+.header-p {
+  user-select: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  margin-left: 40px;
+  padding-top: 19px;
+  padding-left: 22px;
+  color: #5c5470;
+}
+
+.header-span {
+  color: #b9b4c7;
+}
+
+/* navi */
+
+.header-navi {
+  transition: 0.2s;
+  user-select: none;
+  background-color: transparent;
+  margin-left: 650px;
+  padding: 0;
+  margin-top: 19px;
+}
+
+.header-navi nav ul li {
+  margin-top: 19px;
+  background-color: transparent;
+  display: inline;
+  margin-right: 20px;
+}
+
+.header-navi nav ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  user-select: none;
+  margin-right: 1px;
+  text-decoration: none;
+  color: #5c5470;
+  position: relative;
+  transition: 0.3s;
+}
+
+.header-navi nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #5c5470;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.header-navi nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+/* header end */
+
+/* start main */
+.main {
+  padding-top: 120px;
+  padding-left: 4%;
+  height: 940px;
+  width: 96%;
+  display: inline-block;
+  background: linear-gradient(to right, #ffffff, #f5f0fc, #e3dcee, #cbc1db);
+}
+
+/* form */
+
+.form {
+  margin: 0px auto 0;
+  border-radius: 30px;
+  width: 80%;
+  height: 520px;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px 2px rgba(97, 97, 97, 0.055);
+}
+
+.search-logo {
+  margin-left: 20px;
+  padding-top: 20px;
+  width: 30px;
+  display: inline-block;
+}
+
+.form-head {
+  margin-left: 53px;
+  margin-top: -30px;
+  margin-bottom: -10px;
+  height: 70px;
+  border-radius: 30px;
+  font-family: Godwit, MuseoSans, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol;
+  color: #352f44;
+  font-weight: bold;
+  user-select: none;
+}
+
+.form-label {
+  font-weight: bold;
+  font-family: Godwit, MuseoSans, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.form-input {
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #352f44;
+  width: 90%;
+  height: 22px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: 1s;
+  border-radius: 7px;
+}
+
+.form-input2 {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #352f44;
+  width: 60%;
+  height: 22px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: 1s;
+  border-radius: 7px;
+}
+
+.form-button {
+  background-color: #352f44;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  width: 28%;
+  margin-left: 17px;
+  height: 43px;
+  transition: 1s;
+  font-size: medium;
+  font-weight: bolder;
+  border-radius: 7px;
+}
+
+* hvr */ .form-input:focus {
+  transition: 0.3s;
+  border-color: rgb(53, 47, 68);
+  outline: none;
+  box-shadow: 0 0 5px rgb(53, 47, 68);
+}
+
+.form-input:hover {
+  transition: 0.3s;
+  border-color: rgb(53, 47, 68);
+  outline: none;
+}
+
+.form-input2:focus {
+  transition: 0.3s;
+  border-color: rgb(53, 47, 68);
+  outline: none;
+  box-shadow: 0 0 5px rgb(53, 47, 68);
+}
+
+.form-input2:hover {
+  transition: 0.3s;
+  border-color: rgb(53, 47, 68);
+  outline: none;
+}
+
+.login-button:hover {
+  transition: 1s;
+  border-radius: 50px;
+  background-color: #60547a;
+}
+
+.main a {
+  display: flex;
+  font-family: Godwit, MuseoSans, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol;
+  text-decoration: none;
+  background-color: #352f44;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 9px 20px 9px;
+  width: 95px;
+  margin-top: 30px;
+  margin-left: 10%;
+  height: 25px;
+  transition: 1s;
+  font-size: medium;
+  font-weight: bolder;
+  border-radius: 7px;
+}
+
+.main a:hover,
+.form-button:hover {
+  transition: 1s;
+  background-color: #fff;
+  color: #352f44;
+  border: 1px solid #352f44;
+}

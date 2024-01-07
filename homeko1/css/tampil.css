@@ -1,0 +1,165 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #eaeaea;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* header */
+
+.pik {
+  width: 100%;
+  position: fixed;
+  display: block;
+  z-index: 1111;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  background: linear-gradient(to right, #ffffff, #f5f0fc, #e3dcee, #cbc1db);
+  height: 55px;
+}
+
+.header-p {
+  user-select: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  margin-left: 40px;
+  padding-top: 19px;
+  padding-left: 22px;
+  color: #5c5470;
+}
+
+.header-span {
+  color: #b9b4c7;
+}
+
+/* navi */
+
+.header-navi {
+  transition: 0.2s;
+  user-select: none;
+  background-color: transparent;
+  margin-left: 650px;
+  padding: 0;
+  margin-top: 19px;
+}
+
+.header-navi nav ul li {
+  margin-top: 19px;
+  background-color: transparent;
+  display: inline;
+  margin-right: 20px;
+}
+
+.header-navi nav ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  user-select: none;
+  margin-right: 1px;
+  text-decoration: none;
+  color: #5c5470;
+  position: relative;
+  transition: 0.3s;
+}
+
+.header-navi nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #5c5470;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.header-navi nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+/* header end */
+
+/* start main */
+.main {
+  padding-top: 120px;
+  padding-left: 4%;
+  height: 940px;
+  width: 96%;
+  display: inline-block;
+  background: linear-gradient(to right, #ffffff, #f5f0fc, #e3dcee, #cbc1db);
+}
+
+/* Tampil */
+.bhead {
+  margin-top: 100px;
+}
+
+.bd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-top: 100px;
+}
+
+.inino {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f2f2f2;
+  width: 4%;
+}
+
+.iniopsi {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f2f2f2;
+  width: 11.8%;
+}
+
+.initdno {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.inith,
+.initd {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.inith {
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.op {
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 2px;
+  color: #5c5470;
+  border: 1px solid #5c5470;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.op:hover {
+  background-color: #5c5470;
+  color: white;
+}
